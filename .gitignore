@@ -1,0 +1,9 @@
+# Cargo
+target/
+
+# Shuttle
+Secrets*.toml
+
+# IJ
+*.iml
+.idea/
