@@ -1393,10 +1393,13 @@ dependencies = [
 name = "shuttle-demo-ledoyen"
 version = "0.1.0"
 dependencies = [
+ "anyhow",
  "axum",
  "shuttle-axum",
  "shuttle-runtime",
+ "shuttle-secrets",
  "tokio",
+ "tracing",
 ]
 
 [[package]]
@@ -1442,6 +1445,17 @@ dependencies = [
  "tower",
  "tracing",
  "tracing-subscriber",
+]
+
+[[package]]
+name = "shuttle-secrets"
+version = "0.24.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a24e7bc76182802bddaaa184a8f55b9ff47a88a5463d641857c9480f86ae08a2"
+dependencies = [
+ "async-trait",
+ "serde",
+ "shuttle-service",
 ]
 
 [[package]]

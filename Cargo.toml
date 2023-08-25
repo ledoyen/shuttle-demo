@@ -4,7 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-axum = "0.6.18"
 shuttle-axum = "0.24.0"
 shuttle-runtime = "0.24.0"
-tokio = "1.28.2"
+shuttle-secrets = "0.24.0"
+axum = "0.6.20"
+tokio = "1.32.0"
+anyhow = "1.0.75"
+tracing = "0.1.37"
