@@ -1,0 +1,16 @@
+name: Deploy to Shuttle.rs
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: ledoyen/deploy-action@feature/idiomatic_secret_input
+        with:
+          deploy-key: ${{ secrets.SHUTTLE_API_KEY }}
+          allow-dirty: "true"
